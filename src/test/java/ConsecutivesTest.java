@@ -14,8 +14,6 @@ class ConsecutivesTest {
     @MethodSource("getSumConsecutivesParams")
     void sumConsecutives(List<Integer> expected, List<Integer> input) {
         assertEquals(expected, Consecutives.sumConsecutives(input));
-        assertEquals(expected, Consecutives.sumConsecutives(input));
-        assertEquals(expected, Consecutives.sumConsecutives(input));
     }
 
     private static Stream<Arguments> getSumConsecutivesParams() {
